@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Online</title>
+    <link rel="stylesheet" href="CSS.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <style>
+body {
+    background-image: url(Images/Back.png);
+    background-size: 100%;
+}
+
+.insta {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.insta .letter {
+  display: inline-block;
+  line-height: 20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+@font-face {
+    font-family: Donne;
+    src: url(Font/Donne.otf);
+}
+@font-face {
+font-family: Sweet;
+    src: url(Font/Bookish.otf);
+}
+@font-face {
+font-family: Winter;
+    src: url(Font/Midwinter.otf);
+}
+.user-frame {
+  width: 50%;
+  padding: 10px 200px 10px 10px;
+  -webkit-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.13);
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.13);
+}
+    </style>
+
+</head>
+    <div class="header">
+        <h2 style="text-align: center;font-size: 70px;font-family: Donne;margin-bottom: 0px;padding-top: 220px;">Calculator Online</h2>
+        <p style="text-align: center;font-family: Sweet;padding-bottom: 270px;">Calculator berbasis website ini dibuat oleh Dimas Ramadhan Aji Kusuma</p>
+    </div>
+    <ul>
+        <li><a class="insta" style="font-family: Winter;" href="https://www.instagram.com/reflisa_ki/">Follow me on Instragram !</a></li>
+    </ul>
+
+    <div class="user-frame" style="float: left;background-color: rgba(245, 245, 245, 0.726);padding-top: 10px;">
+        <img src="Images/Me.jpeg" alt="Me" style="width: 230px;margin-left: 40px;float: left;margin-right: 20px;">
+        <h1 style="font: large;font-family: Winter; color: rgba(0, 0, 0, 0.507); margin-left: 45%;border-bottom: solid 3px rgba(0, 0, 0, 0.459);">My Messages</h1>
+        <i style="font: large;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: rgba(0, 0, 0, 0.507);">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam est in a sunt officiis placeat nihil, quo fugit inventore fuga, officia quas accusantium nesciunt omnis nostrum beatae ipsa modi quam."</i><br><br>
+        <i style="font: large;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: rgba(0, 0, 0, 0.507);">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam est in a sunt officiis placeat nihil, quo fugit inventore fuga, officia quas accusantium nesciunt omnis nostrum beatae ipsa modi quam."</i><br><br><br><br><br>
+        <button style="height: 30px;width: 300px;background-color: #23cf5f;color: white;border-radius: 17px;font-family: winter;outline: none;border: none;font-size: 20px;cursor: pointer;"><a style="text-decoration: none; color: white;" href="https://wa.me/6289635794376?text=Hello">Contact me on Whatsapp</a></button>
+    </div>
+    <div style="padding: 10px 10px 20px 10px; background-color: white;">
+    <h2 style="color: gray;font-size: 60px;font-family:Donne;margin-left: 70%;margin-top: 20px;">Profil Siswa</h2>
+    <p style="color: gray;font-size: 25px;font-family:Donne;margin-left: 70%;margin-top: 20px;">Nama     : Dimas Ramadhan Aji Kusuma</p>
+    <p style="color: gray;font-size: 25px;font-family:Donne;margin-left: 70%;margin-top: 20px;">Absen    : 12</p>
+    <p style="color: gray;font-size: 25px;font-family:Donne;margin-left: 70%;margin-top: 20px;">Kelas    : XI RPL 1</p>
+    <br>
+    <br>
+    <br>
+    <h2 style="color: gray;font-size: 30px;font-family:Donne;margin-left: 71.5%;margin-top: 35px;">SMK NEGERI 1 BANGSRI</h2>
+    </div>
+    <form name="calculator">
+        <table>
+            <!-- Display Hasil -->
+            <tr>
+                <td>
+                    <input type="text" name="display" id="display">
+                </td>
+            </tr>
+            <!-- Row Pertama -->
+            <tr>
+            <td>
+            <input style="margin-left: 12px;" type="button" id="tombol" name="tujuh" value="7" onclick="calculator.display.value += '7'">
+            <input type="button" id="tombol" name="delapan" value="8" onclick="calculator.display.value += '8'">
+            <input type="button" id="tombol" name="sembilan" value="9" onclick="calculator.display.value += '9'">
+            <input type="button" id="tombol1" name="bagi" value="&divide;" onclick="calculator.display.value += '/'">
+            </td>
+            </tr>
+            <!-- Row Kedua -->
+            <tr>
+            <td>
+            <input style="margin-left: 12px;" type="button" id="tombol" name="empat" value="4" onclick="calculator.display.value += '4'">
+            <input type="button" id="tombol" name="lima" value="5" onclick="calculator.display.value += '5'">
+            <input type="button" id="tombol" name="enam" value="6" onclick="calculator.display.value += '6'">
+            <input type="button" id="tombol1" name="kali" value="&times;" onclick="calculator.display.value += '*'">
+            </td>
+            </tr>
+            <!-- Row Ketiga -->
+            <tr>
+            <td>
+            <input style="margin-left: 12px;" type="button" id="tombol" name="satu" value="1" onclick="calculator.display.value += '1'">
+            <input type="button" id="tombol" name="dua" value="2" onclick="calculator.display.value += '2'">
+            <input type="button" id="tombol" name="tiga" value="3" onclick="calculator.display.value += '3'">
+            <input type="button" id="tombol1" name="kurang" value="&minus;" onclick="calculator.display.value += '-'">
+            </td>
+            </tr>
+            <!-- Row Keempat -->
+            <tr>
+            <td>
+            <input style="margin-left: 12px;" type="button" id="tombol" name="nol" value="0" onclick="calculator.display.value += '0'">
+            <input type="button" id="tombol1" name="point" value="." onclick="calculator.display.value += '.'">
+            <input type="button" id="tombol" name="nolnol" value="00" onclick="calculator.display.value += '00'">
+            <input type="button" id="tombol1" name="plus" value="&plus;" onclick="calculator.display.value += '+'">
+            </td>
+            </tr>
+            <h2 style="text-align: center;font-size: 70px;font-family: Donne;margin-bottom: 20px;margin-top: 30px;">Feel Free To Use It</h2>
+            <tr>
+            <td>
+            <button class="del" type="button" value="C" onclick="calculator.display.value = ''">AC</button>
+            <input type="button" class="del2" value="&equals;" onclick="calculator.display.value = eval(calculator.display.value)">
+            </td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script>
+var textWrapper = document.querySelector('.insta');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+        anime.timeline({loop: true})
+        .add({
+        targets: '.insta .letter',
+        scale: [4,1],
+        opacity: [0,1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 950,
+        delay: (el, i) => 70*i
+        }).add({
+        targets: '.insta',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+        });
+</script>
+</html>

@@ -1,0 +1,90 @@
+#display {
+
+    display: grid;
+    font-size: 30px;
+    width: 1330px;
+    height: 70px;
+    text-align: right;
+    box-sizing: border-box;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    outline: none;
+    position: relative;
+    background-color: white;
+}
+#display:hover {
+    border: solid 1px #868181;
+}
+#display:active {
+    border: solid 1px rgb(183, 183, 255);
+}
+#tombol {
+    width: 24.2%;
+    border: solid 1px rgb(233, 222, 222);
+    text-align: center;
+    padding: 10px 45px;
+    background-color: #fcfafa;
+    border-radius: 7px;
+    outline: none;
+}
+#tombol:hover {
+    background-color: #f8f7f7;
+    cursor: pointer;
+}
+#tombol:active {
+    border: 1px solid rgb(173, 168, 168);
+}
+#tombol1 {
+    width: 24.2%;
+    border: solid 1px rgb(233, 222, 222);
+    text-align: center;
+    padding: 10px 45px;
+    background-color: #ecedf0;
+    border-radius: 7px;
+    outline: none;
+    font-weight: bold;
+    
+}
+#tombol1:hover {
+    background-color: #dfe1e5;
+    cursor: pointer;
+}
+#tombol1:active {
+    border: 1px solid rgb(129, 125, 125);
+}
+
+.del {
+    width: 49.5%;
+    border: solid 1px rgb(233, 222, 222);
+    text-align: center;
+    padding: 15px 45px;
+    background-color: #ee4040;
+    border-radius: 7px;
+    outline: none;
+}
+.del:hover {
+    background-color: #be3333;
+    cursor: pointer;
+}
+.del:active {
+    border: 1px solid rgb(173, 168, 168);
+}
+.del2 {
+    width: 49.5%;
+    border: solid 1px rgb(233, 222, 222);
+    text-align: center;
+    padding: 15px 45px;
+    background-color: #4285f4;
+    border-radius: 7px;
+    outline: none;
+}
+.del2:hover {
+    background-color: #3e79d8;
+    cursor: pointer;
+}
+.del2:active {
+    border: 1px solid rgb(173, 168, 168);
+}
+.header {
+    margin-bottom: 0px;
+}
